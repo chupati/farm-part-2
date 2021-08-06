@@ -36,10 +36,10 @@ class ComicIssue(BaseModel):
     publisher_name: str
 
 
-
 @app.get('/')
 async def root():
     return {'message': 'Hello World'}
+
 
 @app.get('/comics/{title}/{issue_number}', response_model=List[ComicIssue])
 async def get_comic_issues(title: str, issue_number: str): 
@@ -51,4 +51,3 @@ async def get_comic_issues(title: str, issue_number: str):
     for issue in issues:
         data.append(ComicIssue(**issue))
     return data
-
