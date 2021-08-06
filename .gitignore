@@ -1,2 +1,3 @@
 data/mongo
 .idea
+fastapi/app/__pycache__
