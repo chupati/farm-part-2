@@ -32,3 +32,4 @@ services:
       MONGODB_PORT: 27017
       MONGODB_USER: root
       MONGODB_PASSWORD: OTNmYTdjYmZkMjE5ZmYzODg0MDZiYWJh
+      PYTHONPATH: /app
